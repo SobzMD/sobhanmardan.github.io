@@ -1,8 +1,3 @@
----
-title: "README"
-output: html_document
-date: "2026-01-30"
----
 # Sobhan Mardan – Academic Website
 
 This repository contains the source code for my personal academic website, hosted on **GitHub Pages**.
