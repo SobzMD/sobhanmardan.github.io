@@ -16,6 +16,9 @@ about:
     - icon: envelope
       text: Email
       href: sobhan.mardan@outlook.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/sobhan-mardan
 ---
 
 [Pharmacoepidemiology]{.badge} [R]{.badge} [Causal Inference]{.badge} [Real-World Evidence]{.badge}
