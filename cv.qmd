@@ -1,0 +1,148 @@
+---
+title: "Curriculum Vitae"
+format:
+  html:
+    toc: true
+    toc-expand: true
+    theme: superhero
+      # light: faltly
+      # dark: superhero
+    # toggle: true
+    css: styles.css
+    anchor-sections: false
+  # pdf:
+  #   documentclass: scrartcl
+  #   geometry: margin=1in
+  #   keep-tex: true
+# csl: watch/vancouver.csl
+# bibliography: 
+#   - watch/publications.bib
+#   - watch/thesis.bib
+#   - watch/conferences.bib
+# link-citations: true
+nocite: '@*'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+  
+```
+
+[Download CV](media/sobhan_mardan_cv.pdf){.btn .btn-primary download="sobhan_mardan_cv.pdf"}
+
+## {{< fa file-lines >}} Summary
+
+I have been fortunate to work across a range of clinical and research environments that have shaped both my research interests and professional perspective. Through this work, I have gained exposure to diverse clinical conditions, research methodologies, and healthcare practices, and have developed a strong appreciation for how research translates into real-world patient care.
+
+What I find most rewarding is working collaboratively with multidisciplinary teams to bring ideas together and contribute to evidence-based care that can make a meaningful difference for patients.
+
+Below is a summary of my experience, skills, and recognitions so far, which I look forward to continuing to build as my training and career progress.
+
+## {{< fa graduation-cap >}} Education
+
+-   PhD in Pharmaceutical Science - University of British Columbia (2026 - present)
+
+-   MSc in Kinesiology – University of British Columbia (2021)
+
+-   BSc in Biomedical Physiology and Kinesiology – Simon Fraser University (2018)
+
+
+## {{< fa gear >}} Skills
+
+- R, Python, Shiny apps 
+
+- Causal Inference, Time-to-event analysis, Biostatistics 
+
+- Research Communication
+
+
+
+## {{< fa briefcase >}} Work Experience
+
+#### **Vancouver General Hospital Department of Radiology**
+
+Research Coordinator (2023 - present)
+
+-   Develop and manage research ethics applications.
+
+-   Develop proposals and analysis plans for research projects.
+
+-   Create data analysis reports using the R statistical program.
+
+-   Prepare manuscripts, abstracts, clinical study report.
+
+-   Participate in team grant writing applications.
+
+-   Mentor research fellows, medical students, co-op students in their research projects.
+
+-   Work with the principal investigators to develop feasible research projects and budgets.
+
+-   Organize and develop studies on REDCap database.
+
+-   Act as a liaison between stakeholders including principal investigators, hospital administrators and sponsors.
+
+-   Manage industry-funded clinical trials.
+
+#### **Nova Scotia Health Authority Department of Geriatric Medicine**
+
+Research Assistant (2021-2023)
+
+-   Developed performance analytics for clinical trials using intelligence dashboards.
+
+-   Analyzed collected data via R statistical program and developed reports for communication amongst study partners and stakeholders.
+
+-   Managed databases for scoping reviews.
+
+-   Collected data using REDCap software.
+
+-   Prepared study protocol documents and obtained approval from the NSHA Research Ethics Board.
+
+-   Screened and enrolled participants based on the predetermined study criteria and obtained written consent.
+
+-   Performed routine cognitive and physical assessment as per protocol.
+
+-   Contributed to grant applications.
+
+-   Developed budget for building a state-of-the-art aging research laboratory.
+
+#### **University of British Columbia School of Kinesiology**
+
+Graduate Thesis Study Coordinator (2019-2021)
+
+-   Prepared clinical trial documents, research ethics submission and registration
+
+-   Collected, analyzed, and interpreted data utilizing appropriate statistics and presented data in an interactive graphical manner using SPSS and Microsoft Excel.
+
+-   Screened and enrolled participants based on the predetermined study criteria and obtained written consent.
+
+-   Coordinated participant recruitment from multiple clinical and surgical centers to ensure adequate recruitment and retention rates.
+
+Graduate Teaching Assistant (2019-2021)
+
+-   Conducted tutorial sessions on physiology and anatomy for students on a weekly basis.
+
+-   Collaborated with the course instructor to develop best practice learning resources for students
+
+#### **Obesity Medicine and Diabetes Institute**
+
+Kinesiologist & Physician Assistant (2018-2019)
+
+-   Assisted the medical director, clinicians, and program dietitian in managing patient care by taking extensive medical and weight histories, screening new patients, collecting anthropomorphic measurements, writing detailed consultations and referral letters to other physicians, and maintaining patient’s electronic medical records.
+
+-   Took anthropometric measurements and blood pressure readings; assessed basal metabolic rates via indirect calorimetry.
+
+-   Developed and modified program material based on current scientific evidence for obesity management.
+
+-   Provided one-on-one nutrition and physical activity education to motivate patients to live healthy lifestyles.
+
+-   Presented educational and interactive group medical visit sessions for patients on a weekly basis.
+
+# {{< fa university >}} Awards
+
+-   Faculty of Pharmaceutical Sciences Graduate Award 2026
+
+-   President's Academic Excellence Initiative PhD Award 2026
+
+-    KIN Graduate Student Research Grant Competition 2020
+
+

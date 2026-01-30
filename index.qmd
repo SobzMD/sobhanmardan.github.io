@@ -1,0 +1,40 @@
+---
+title: "Sobhan Mardan"
+image: media/headshot.jpg
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 17em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sobhan-mardan-5a6a7159/?originalSubdomain=ca
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=nFtKiKUAAAAJ&hl=en
+    - icon: envelope
+      text: Email
+      href: sobhan.mardan@outlook.com
+---
+
+[Pharmacoepidemiology]{.badge} [R]{.badge} [Causal Inference]{.badge} [Real-World Evidence]{.badge}
+
+**Turning real-world health data into drug safety insights**\
+PhD Student \@ UBC \| Research Coordinator \@ Vancouver General Hospital
+
+I am a PhD student in Pharmaceutical Sciences specializing in pharmacoepidemiology where I evaluate the real-world effectiveness and safety of drug therapies. 
+
+For my doctoral research, I am studying oral anti-coagulation (OAC) therapy in patients with atrial fibrillation (AF). Using causal inference methods applied to observational data, I examine whether patients’ frailty status modifies the effectiveness of OAC, with a focus on clinically important outcomes such as stroke and mortality.
+
+
+
+
+
+<!-- # Education -->
+
+<!-- **University of British Columbia** \| Vancouver, BC -->
+
+<!-- PhD Student in Pharmacoepidemiology \| 2026-2030 -->
+
+<!-- Unraveling the hidden patterns in drug outcomes to improve lives—one dataset at a time. -->

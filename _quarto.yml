@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Sobhan Mardan"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - publications.qmd
+      - projects.qmd
+      - cv.qmd
+
+format:
+  html:
+    theme: superhero
+      # light: faltly
+      # dark: 
+    # toggle: true
+    css: styles.css
+    toc: true
+    page-layout: full
+    

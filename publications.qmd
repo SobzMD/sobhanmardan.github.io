@@ -1,0 +1,89 @@
+---
+title: "Publications"
+editor: visual
+nocite: '@*'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+  
+```
+
+```{r, include = FALSE}
+# update_bib.R
+# Run whenever Mendeley updates watch/raw.bib
+
+# Auto-install + load packages
+pacman::p_load(tidyverse, bib2df,quarto,RefManageR)
+
+BibOptions(max.names = 99,sorting = "ydnt")
+
+# === FILE PATHS (all in watch/ folder) ===
+raw_bib_path     <- "watch/raw.bib"
+pub_bib_path     <- "watch/publications.bib"
+thesis_bib_path  <- "watch/thesis.bib"
+conf_bib_path    <- "watch/conferences.bib"
+
+# 1. Read Mendeley export
+if (!file.exists(raw_bib_path)) {
+  stop("watch/raw.bib not found! Did Mendeley export it?")
+}
+bib <- bib2df(raw_bib_path)
+
+# 2. Clean and classify using CATEGORY field
+bib_clean <- bib %>%
+  mutate(
+    AUTHOR = map_chr(AUTHOR, ~ paste(.x, collapse = " and ")),
+    YEAR   = as.numeric(YEAR),
+    # Classify based on Mendeley's CATEGORY
+    TYPE = case_when(
+      CATEGORY %in% c("ARTICLE", "JOURNAL ARTICLE") ~ "Publication",
+      CATEGORY %in% c("THESIS", "PHDTHESIS", "MASTERSTHESIS") ~ "Thesis",
+      CATEGORY %in% c("INPROCEEDINGS", "CONFERENCE", "CONFERENCE PAPER") ~ "Conference",
+      TRUE ~ "Other"
+    )
+  ) %>%
+  arrange(desc(YEAR), AUTHOR)
+
+# bib_clean <- bib_clean[order(as.numeric(bib_clean$YEAR), decreasing = TRUE)]
+
+# 3. Split into separate files
+bib_publications <- bib_clean %>% filter(TYPE == "Publication")
+bib_thesis       <- bib_clean %>% filter(TYPE == "Thesis")
+bib_conferences  <- bib_clean %>% filter(TYPE == "Conference")
+
+# 4. Save each to watch/ folder
+df2bib(bib_publications, file = pub_bib_path)
+df2bib(bib_thesis,       file = thesis_bib_path)
+df2bib(bib_conferences,  file = conf_bib_path)
+
+# 5. Summary
+# cat("Updated in watch/:\n")
+# cat("  publications.bib →", nrow(bib_publications), "entries\n")
+# cat("  thesis.bib       →", nrow(bib_thesis),       "entries\n")
+# cat("  conferences.bib  →", nrow(bib_conferences),  "entries\n")
+
+```
+
+## {{< fa graduation-cap >}} Scholarly Work
+
+### Theses
+
+```{r, results='asis'}
+ReadBib(thesis_bib_path)
+```
+
+### Peer-Reviewed Publications
+
+```{r, results='asis'}
+ReadBib(pub_bib_path)
+
+# data.frame(ReadBib(pub_bib_path))
+
+```
+
+### Conference Presentations
+
+```{r, results='asis'}
+ReadBib(conf_bib_path)
+```
